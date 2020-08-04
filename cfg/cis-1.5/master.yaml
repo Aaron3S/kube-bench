@@ -118,6 +118,7 @@ groups:
           Run the below command (based on the file location on your system) on the master node.
           For example,
           chmod 644 $etcdconf
+        type: "skip"
         scored: true
 
       - id: 1.1.8
@@ -134,6 +135,7 @@ groups:
           Run the below command (based on the file location on your system) on the master node.
           For example,
           chown root:root $etcdconf
+        type: "skip"
         scored: true
 
       - id: 1.1.9
@@ -172,6 +174,7 @@ groups:
           ps -ef | grep etcd
           Run the below command (based on the etcd data directory found above). For example,
           chmod 700 /var/lib/etcd
+        type: "skip"
         scored: true
 
       - id: 1.1.12
@@ -187,6 +190,7 @@ groups:
           ps -ef | grep etcd
           Run the below command (based on the etcd data directory found above).
           For example, chown etcd:etcd /var/lib/etcd
+        type: "skip"
         scored: true
 
       - id: 1.1.13
