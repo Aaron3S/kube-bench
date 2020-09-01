@@ -1,7 +1,7 @@
 SOURCES := $(shell find . -name '*.go')
 BINARY := kube-bench
-DOCKER_REGISTRY ?= aquasec
-VERSION ?= $(shell git rev-parse --short=7 HEAD)
+DOCKER_REGISTRY ?= kubeopereator
+VERSION ?= v0.0.1
 KUBEBENCH_VERSION ?= $(shell git describe --tags --abbrev=0)
 IMAGE_NAME ?= $(DOCKER_REGISTRY)/$(BINARY):$(VERSION)
 TARGET_OS ?= linux
